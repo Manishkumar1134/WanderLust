@@ -1,0 +1,53 @@
+<% layout("/layouts/boilerplate") %>
+<!-- <style>
+  body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+</style> -->
+
+<!-- Centered card with form -->
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-4">
+    <div class="card p-4 mt-5 card-user">
+      <div class="card-body">
+        <h2 class="text-center mb-4 text-primary">Login</h2>
+        <form method="post" action="/login" class="needs-validation" novalidate>
+          <div class="form-floating mb-3">
+            <input
+              name="username"
+              id="username"
+              placeholder="Enter Name"
+              type="text"
+              class="form-control"
+              required
+            />
+            <label for="username">Name</label>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              name="password"
+              id="password"
+              placeholder="Enter password"
+              type="password"
+              class="form-control"
+              required
+            />
+            <label for="password">Password</label>
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+
+          <div class="d-grid">
+            <button class="btn btn-custom btn-block">Login</button>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-center mt-3">
+        <small class="text-muted"
+          >Don't have an account? <a href="/signup">Sign up</a></small
+        >
+      </div>
+    </div>
+  </div>
+</div>
